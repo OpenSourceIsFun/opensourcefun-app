@@ -11,7 +11,7 @@ export const FundPage = () => {
   const router = useRouter();
   const isMobile = useIsMobile();
 
-  if (location.pathname !== '/astar') {
+  if (location.pathname !== '/ai-agents') {
     router.push(HOME_ROUTE);
     return <Loading />;
   }
@@ -39,7 +39,7 @@ export const FundPage = () => {
         >
           <Flex alignItems="center" marginBottom="16px">
             <Image
-              src="/images/astar_icon.png"
+              src="/images/funds/ai-agents.png"
               width="96px"
               height="96px"
               marginRight="8px"
@@ -50,13 +50,11 @@ export const FundPage = () => {
             color="#fff"
             fontSize={['48px', '48px', '64px']}
           >
-            Astar projects
+            Ai Agents
           </Heading>
 
           <HeaderFlex flexDirection="column">
-            <BannerText>
-              The Future of Smart Contracts for Multichain
-            </BannerText>
+            <BannerText>Base, Solana, Sonic.</BannerText>
           </HeaderFlex>
           <HeaderFlex
             gap="32px"
@@ -64,12 +62,12 @@ export const FundPage = () => {
             flexDirection={isMobile ? 'column' : 'row'}
           >
             <BannerFlex>
-              <BannerNumber>500K+</BannerNumber>
-              <BannerText>Community members</BannerText>
+              <BannerNumber>10</BannerNumber>
+              <BannerText>Funds live</BannerText>
             </BannerFlex>
             <BannerFlex>
-              <BannerNumber>$200M</BannerNumber>
-              <BannerText>Total Value Locked</BannerText>
+              <BannerNumber>$200k</BannerNumber>
+              <BannerText>Funds Locked</BannerText>
             </BannerFlex>
           </HeaderFlex>
         </Flex>

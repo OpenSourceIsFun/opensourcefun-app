@@ -84,7 +84,7 @@ const NetworkItem = (props: { network: Network }) => {
           Coming soon
         </Button>
       ) : (
-        <Link href="/astar">
+        <Link href="/ai-agents">
           <Button
             marginTop="auto"
             backgroundColor="accent.green"

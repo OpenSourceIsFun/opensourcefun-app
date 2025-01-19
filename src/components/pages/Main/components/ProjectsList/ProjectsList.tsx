@@ -15,15 +15,17 @@ export const ProjectsList = () => (
     backgroundColor="background.light"
   >
     <Text fontSize="32px" fontWeight={600}>
-      Upcoming claims
+      Funds live
     </Text>
     <Grid
       gridTemplateColumns={['1fr', '1fr', '1fr', '1fr 1fr']}
       gap="40px"
       marginTop="56px"
     >
-      <ProjectItem alias="astar" />
-      <ProjectItem alias="algem" />
+      <ProjectItem alias="ai-agents" />
+      <ProjectItem alias="ai-combinator" />
+      <ProjectItem alias="lobster-dao" />
+      <ProjectItem alias="purple-robots" />
     </Grid>
   </Flex>
 );

@@ -23,7 +23,7 @@ interface ProjectItemProps {
 }
 
 const getClaimUrl = (meta: ProjectMeta) =>
-  `/${meta.network.toLowerCase()}/claims/${meta.alias}`;
+  `/${meta.network.toLowerCase()}/apply/${meta.alias}`;
 
 const ProjectItemComponent = ({ meta }: ProjectItemProps) => {
   const { isRegistered, loading: isRegisteredLoading } =

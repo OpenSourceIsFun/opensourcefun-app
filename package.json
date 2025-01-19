@@ -1,6 +1,6 @@
 {
   "name": "opensourcefun-app",
-  "description": "Polkadot Launchpad",
+  "description": "opensourcefun",
   "version": "1.0.1",
   "private": true,
   "author": "opensourcefun Team",
@@ -28,9 +28,6 @@
     "@gear-js/api": "0.25.2",
     "@hookform/resolvers": "2.8.8",
     "@metamask/providers": "8.1.1",
-    "@polkadot/api": "9.2.2",
-    "@polkadot/extension-dapp": "0.43.2",
-    "@polkadot/ui-keyring": "2.2.1",
     "@talismn/api-react-hooks": "0.0.25",
     "@usedapp/core": "1.1.1",
     "@walletconnect/web3-provider": "1.7.8",
