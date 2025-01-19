@@ -14,24 +14,38 @@ interface Network {
 
 const NETWORKS: Network[] = [
   {
-    name: 'Astar',
-    icon: '/images/astar_logo.png',
-    based: 'EVM based',
-    text: 'Astar is a multi-chain smart contract platform that supports multiple blockchains and virtual machines.',
+    name: 'Ai Agents',
+    icon: '/images/funds/ai-agents.png',
+    based: 'Base, Solana, Sonic.',
+    text: 'Autonomous AI systems that execute tasks, make decisions, and drive innovation without human intervention. Perfect for projects leveraging intelligent automation.',
     isComingSoon: false,
   },
   {
-    name: 'Moonbeam',
-    icon: '/images/moonbeam_logo.png',
-    based: 'EVM based',
-    text: 'An Ethereum-compatible smart contract parachain on Polkadot.',
+    name: 'DeSci',
+    icon: '/images/funds/desci.png',
+    based: 'Base, Solana',
+    text: 'Transforming scientific research with blockchain: open, incentivized, and community-driven. Ideal for projects advancing transparent and collaborative science.',
     isComingSoon: true,
   },
   {
-    name: 'Gear',
-    icon: '/images/gear_logo.png',
-    based: 'Polkadot based',
-    text: 'An advanced WASM based smart contract platform capable of being deployed as a Kusama and Polkadot parachain',
+    name: 'Meme (tokens, infra)',
+    icon: '/images/funds/meme.png',
+    based: 'Base, Solana, BNB.',
+    text: 'Where memes meet money: build viral, community-powered tokens that make finance fun, accessible, and unstoppable.',
+    isComingSoon: true,
+  },
+  {
+    name: 'L1/L2/L2s',
+    icon: '/images/funds/l1-l2.png',
+    based: 'Chain agnostic',
+    text: 'The backbone of blockchain: funding for scalable, secure, and interoperable infrastructure projects on Layer 1, Layer 2, and beyond.',
+    isComingSoon: true,
+  },
+  {
+    name: 'Cryptography',
+    icon: '/images/funds/crypto.png',
+    based: 'Chain agnostic',
+    text: 'Powering privacy and security in Web3: from zero-knowledge proofs to fully homomorphic encryption. A space for cutting-edge cryptographic innovation.',
     isComingSoon: true,
   },
 ];
@@ -104,12 +118,9 @@ export const FundsPage = () => {
       >
         <div>
           <Heading fontSize="32px" marginBottom="8px">
-            Choose your project provider
+            Choose your project type to apply
           </Heading>
-          <Text>
-            Pick the network you are used to and we will find the projects
-            running on this blockchain.
-          </Text>
+          <Text>Pick the most suitable market for your project.</Text>
         </div>
         {isMobile ? (
           <Flex

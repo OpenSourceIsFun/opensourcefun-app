@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import { HOME_ROUTE } from '@/constants/routes';
 import { useIsMobile } from '@/hooks/useIsMobile';
 
-export const NetworkPage = () => {
+export const FundPage = () => {
   const router = useRouter();
   const isMobile = useIsMobile();
 
