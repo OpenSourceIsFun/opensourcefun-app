@@ -27,7 +27,6 @@ export const TermsCheckbox = ({ errors, control }: TermsCheckboxProps) => {
           marginLeft="11px"
           fontSize={14}
           lineHeight="24px"
-          color="primary.basic"
           fontFamily="Poppins"
         >
           Yes, I understand and agree to the
