@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import {
   AUTH_EMAIL_ROUTE,
   BACK_OFFICE_ROUTE,
-  NETWORKS_ROUTE,
+  FUNDS_ROUTE,
   PROFILE_ROUTE,
   WALLET_ROUTE,
 } from '@/constants/routes';
@@ -109,7 +109,7 @@ export const AccountButton = () => {
             fontWeight={600}
             _hover={{ color: 'white', backgroundColor: 'primary.basic' }}
             paddingLeft="20px"
-            onClick={() => router.push(NETWORKS_ROUTE)}
+            onClick={() => router.push(FUNDS_ROUTE)}
           >
             Networks
           </MenuItem>

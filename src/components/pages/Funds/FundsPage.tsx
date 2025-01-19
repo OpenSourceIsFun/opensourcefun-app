@@ -45,7 +45,7 @@ const NetworkItem = (props: { network: Network }) => {
 
   return (
     <Flex
-      backgroundColor="#fff"
+      backgroundColor="rgba(118, 118, 128, 0.12)"
       borderRadius="8px"
       padding="32px"
       flexDirection="column"
@@ -54,7 +54,6 @@ const NetworkItem = (props: { network: Network }) => {
       height="362px"
       minWidth="280px"
       maxWidth={isMobile ? '31vw' : 'auto'}
-      border="1px solid var(--chakra-colors-background-gray)"
     >
       <Flex>
         <Image width="64px" height="64px" src={icon} marginRight="18px" />
@@ -79,7 +78,7 @@ const NetworkItem = (props: { network: Network }) => {
               backgroundColor: 'background.gray',
             }}
           >
-            Show projects
+            Show available funds
           </Button>
         </Link>
       )}
@@ -87,7 +86,7 @@ const NetworkItem = (props: { network: Network }) => {
   );
 };
 
-export const NetworksPage = () => {
+export const FundsPage = () => {
   const isMobile = useIsMobile();
   return (
     <Flex width="100%" flexShrink={0} flexDirection="column">

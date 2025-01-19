@@ -2,7 +2,7 @@ import { Flex, Heading, Image } from '@chakra-ui/react';
 import starIcon from '@/assets/star.svg';
 import { Button } from '@/components/common/Button';
 import Link from 'next/link';
-import { NETWORKS_ROUTE } from '@/constants/routes';
+import { FUNDS_ROUTE } from '@/constants/routes';
 
 export const ClaimSuccessPage = () => (
   <Flex
@@ -41,7 +41,7 @@ export const ClaimSuccessPage = () => (
       <br />
       Claim reminder will be sent to your email.
     </Heading>
-    <Link href={NETWORKS_ROUTE}>
+    <Link href={FUNDS_ROUTE}>
       <Button
         variant="primary"
         width="150px"

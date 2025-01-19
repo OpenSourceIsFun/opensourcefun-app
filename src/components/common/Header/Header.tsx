@@ -28,11 +28,11 @@ const MAIN_SITE = 'https://opensourcefun.network';
 const tabs = [
   {
     url: MAIN_SITE,
-    title: 'Main',
+    title: 'About',
   },
   {
-    url: '/networks',
-    title: 'Networks',
+    url: '/funds',
+    title: 'Funds',
   },
 ];
 

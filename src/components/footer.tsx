@@ -16,7 +16,7 @@ import {
 import * as React from 'react';
 import { useCallback, useState } from 'react';
 import styled from '@emotion/styled';
-import { FaLinkedinIn, FaTelegramPlane, FaTwitter } from 'react-icons/fa';
+import { FaTelegramPlane, FaTwitter } from 'react-icons/fa';
 import { GoogleDocsViewer } from '@/components/GoogleDocsViewer/GoogleDocsViewer';
 import {
   PRIVACY_LINK,
@@ -25,7 +25,6 @@ import {
 import githubIcon from '@/assets/github.svg';
 import opensourcefunLogoLightIcon from '@/assets/opensourcefun_logo_light.svg';
 
-import telegramChatIcon from '@/assets/telegram_chat.svg';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { object, string } from 'yup';
@@ -86,7 +85,11 @@ export const Footer = () => {
       >
         <Flex alignItems="flex-start">
           <Flex alignItems="center" marginBottom="40px">
-            <Image src={opensourcefunLogoLightIcon} alt="opensourcefun" height="32px" />
+            <Image
+              src={opensourcefunLogoLightIcon}
+              alt="opensourcefun"
+              height="32px"
+            />
             <Text color="footer.light" marginLeft="12px" fontWeight={900}>
               Powered by opensourcefun
             </Text>
@@ -144,37 +147,23 @@ export const Footer = () => {
           >
             <StyledIconButton
               as="a"
-              href="https://t.me/opensourcefun_en"
+              href="https://t.me/OpenSourceIsFun"
               target="_blank"
               aria-label="Telegram"
               icon={<FaTelegramPlane fontSize="1.25rem" fill="#303030" />}
             />
             <StyledIconButton
               as="a"
-              aria-label="Telegram Chat"
+              href="https://x.com/opensourceisfun"
               target="_blank"
-              href="https://t.me/opensourcefunnetwork"
-              icon={<Image src={telegramChatIcon} />}
-            />
-            <StyledIconButton
-              as="a"
-              href="https://twitter.com/opensourcefunofficial/"
-              target="_blank"
-              aria-label="Twitter"
+              aria-label="XCom"
               icon={<FaTwitter fontSize="1.25rem" fill="#303030" />}
-            />
-            <StyledIconButton
-              as="a"
-              aria-label="LinkedIn"
-              target="_blank"
-              href="https://www.linkedin.com/company/opensourcefunofficial"
-              icon={<FaLinkedinIn fontSize="1.25rem" fill="#303030" />}
             />
             <StyledIconButton
               as="a"
               aria-label="GitHub"
               target="_blank"
-              href="https://github.com/opensourcefunofficial/"
+              href="https://github.com/OpenSourceIsFun"
               icon={<Image src={githubIcon} />}
             />
           </ButtonGroup>
@@ -192,8 +181,8 @@ export const Footer = () => {
         >
           <Flex align="start">
             <Text fontSize="sm" color="footer.dark">
-              &copy; opensourcefun {new Date().getFullYear()}{' '}
-              All&nbsp;Rights&nbsp;Reserved
+              &copy;&nbsp;{new Date().getFullYear()}
+              &nbsp;All&nbsp;Rights&nbsp;Reserved
             </Text>
           </Flex>
           <GoogleDocsViewer

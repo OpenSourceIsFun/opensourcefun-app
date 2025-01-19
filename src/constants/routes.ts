@@ -3,8 +3,8 @@ import { serviceUrl } from '@/config/env';
 const BASE_ROUTE = `https://${serviceUrl}`;
 
 // PAGES
-export const NETWORKS_ROUTE = '/networks';
-export const HOME_ROUTE = NETWORKS_ROUTE;
+export const FUNDS_ROUTE = '/funds';
+export const HOME_ROUTE = FUNDS_ROUTE;
 export const AUTH_EMAIL_ROUTE = '/auth/email';
 export const AUTH_VERIFY_CODE_ROUTE = '/auth/verify-code';
 export const LOGIN_ROUTE = '/auth/login';

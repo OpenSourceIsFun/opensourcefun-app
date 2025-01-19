@@ -8,7 +8,8 @@ const theme = extendTheme({
         fontFamily: 'Poppins',
       },
       body: {
-        backgroundColor: 'var(--chakra-colors-background-light)',
+        color: '#ebebeb',
+        backgroundColor: '#090909',
       },
     },
   },
@@ -39,7 +40,7 @@ const theme = extendTheme({
     },
     warning: '#FFCC15',
     background: {
-      light: '#F9F9F9',
+      light: '#090909',
       dark: '#303030',
       gray: '#EBEBEB',
     },
