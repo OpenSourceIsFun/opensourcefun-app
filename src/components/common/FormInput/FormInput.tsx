@@ -47,7 +47,7 @@ export const FormInput = ({
             id={fieldName}
             type={fieldType}
             errorBorderColor={hasError ? 'error' : undefined}
-            color={hasError ? 'error' : undefined}
+            color={hasError ? 'error' : '#000'}
             onChange={onChange}
             {...field}
             {...rest}
