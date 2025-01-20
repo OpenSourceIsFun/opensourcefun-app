@@ -3,7 +3,6 @@ import { Button } from '@/components/common/Button';
 import useUser from '@/hooks/useUser';
 import { Dispatch, SetStateAction } from 'react';
 import { useWallets } from '@/components/pages/Profile/components/WalletsProvider/WalletsProvider';
-import { useKYCStatus } from '@/components/pages/Profile/components/KYCProvider/KYCProvider';
 import { AUTH_EMAIL_ROUTE } from '@/constants/routes';
 
 import WalletCard from './components/WalletCard/WalletCard';
@@ -21,7 +20,6 @@ export const WalletTab = ({ setSelectedTab }: WalletTabProps) => {
     redirectTo: AUTH_EMAIL_ROUTE,
   });
   const { wallets, walletsAreVerified, fetchWallets } = useWallets();
-  const { isKYCAccepted } = useKYCStatus();
   const from = router.query.from;
 
   return (
@@ -41,18 +39,6 @@ export const WalletTab = ({ setSelectedTab }: WalletTabProps) => {
         </Link>
       )}
       <UserInfo key={JSON.stringify(user)} />
-      {user && !isKYCAccepted && (
-        <Button
-          width="120px"
-          marginTop="20px"
-          variant="primary"
-          display="none"
-          onClick={() => setSelectedTab(2)}
-          disabled={!walletsAreVerified}
-        >
-          Start KYC
-        </Button>
-      )}
     </Flex>
   );
 };

@@ -79,7 +79,7 @@ export const ProfilePage = () => {
             Profile
           </Heading>
         ) : (
-          <Heading marginBottom={101}>Profile</Heading>
+          <Heading marginBottom="24px">Profile</Heading>
         )}
 
         <Flex flexDirection={['column', 'column', 'column', 'row']}>
@@ -99,7 +99,9 @@ export const ProfilePage = () => {
                   justifyContent="space-between"
                   cursor="pointer"
                   backgroundColor={
-                    index === selectedTab ? 'primary.basic' : '#fff'
+                    index === selectedTab
+                      ? 'var(--chakra-colors-accent-green)'
+                      : 'primary.basic'
                   }
                   padding="12px 24px"
                   borderRadius="8px"
@@ -108,7 +110,7 @@ export const ProfilePage = () => {
                   onClick={() => setSelectedTab(index)}
                 >
                   <Text
-                    color={index === selectedTab ? '#fff' : 'secondary.text'}
+                    color={index === selectedTab ? 'secondary.text' : '#fff'}
                     _hover={{ color: 'secondary.textHover' }}
                     fontWeight="600"
                     fontSize="14px"

@@ -111,7 +111,6 @@ export const VerifyCodePage = () => {
         fontWeight="600"
         fontSize="32px"
         lineHeight="44px"
-        color="#303030"
         textAlign="center"
         width="100%"
       >
@@ -121,7 +120,6 @@ export const VerifyCodePage = () => {
         fontWeight="400"
         fontSize="16px"
         lineHeight="24px"
-        color="#303030"
         opacity={0.64}
         textAlign="center"
         marginTop="11px"
@@ -160,6 +158,7 @@ export const VerifyCodePage = () => {
               _focusVisible={{ border: 'none' }}
               letterSpacing={42}
               padding="16px"
+              color="#fff"
               autoComplete="off"
               autoSave="off"
               width="340px"
@@ -186,5 +185,5 @@ export const VerifyCodePage = () => {
 const Dash = styled.div`
   height: 1px;
   width: 47px;
-  background-color: var(--chakra-colors-background-dark);
+  background-color: #fff;
 `;

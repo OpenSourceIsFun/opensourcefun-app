@@ -26,13 +26,7 @@ export const ReferralsTable = () => {
   }, []);
 
   return (
-    <Flex
-      flexDirection="column"
-      backgroundColor="#fff"
-      borderRadius="8px"
-      padding="24px"
-      width="100%"
-    >
+    <Flex flexDirection="column" borderRadius="8px" padding="24px" width="100%">
       <Flex width="100%" flexDirection="column">
         <Heading fontSize="25px" fontWeight={600}>
           Your referrals

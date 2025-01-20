@@ -41,6 +41,7 @@ export const FormInput = ({
             placeholder={placeholder}
             backgroundColor="#fff"
             _disabled={{
+              color: '#000',
               backgroundColor: 'background.gray',
               cursor: 'nor-allowed !important',
             }}
@@ -65,12 +66,12 @@ export const FormInput = ({
       borderRadius="4px"
       border="none"
       backgroundColor="#fff"
-      _disabled={{ backgroundColor: 'background.gray' }}
+      _disabled={{ color: '#000', backgroundColor: 'background.gray' }}
       placeholder={placeholder}
       id={fieldName}
       type={fieldType}
       errorBorderColor={hasError ? 'error' : undefined}
-      color={hasError ? 'error' : undefined}
+      color={hasError ? 'error' : '#000'}
       {...rest}
     />
   );

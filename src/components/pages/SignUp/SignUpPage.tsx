@@ -109,7 +109,6 @@ export const SignUpPage = () => {
         fontWeight="600"
         fontSize="32px"
         lineHeight="44px"
-        color="#303030"
         textAlign="center"
         width={['350px', '350px', 'auto']}
       >
@@ -119,7 +118,6 @@ export const SignUpPage = () => {
         fontWeight="400"
         fontSize="16px"
         lineHeight="24px"
-        color="#303030"
         opacity={0.64}
         textAlign="center"
         marginTop="11px"

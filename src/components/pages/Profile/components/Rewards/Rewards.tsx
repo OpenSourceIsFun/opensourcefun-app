@@ -22,8 +22,7 @@ export const Rewards = () => {
   return (
     <Flex
       width="260px"
-      height="162px"
-      backgroundColor="#fff"
+      backgroundColor="#303030"
       borderRadius="8px"
       flexDirection="column"
       padding="24px"
@@ -34,18 +33,11 @@ export const Rewards = () => {
         <>
           <Flex alignItems="center">
             <Image src={gpointsIcon} marginRight="8px" />
-            <Text fontWeight={500}>G.points</Text>
+            <Text fontWeight={500}>OSF points</Text>
           </Flex>
           <Flex fontSize="32px" fontWeight={600}>
             {total}
           </Flex>
-          <Text
-            textDecoration="underline"
-            fontSize="14px"
-            color="rgba(48, 48, 48, 0.64)"
-          >
-            Get more points
-          </Text>
         </>
       ) : (
         <Flex justifyContent="center" alignItems="center" height="100%">

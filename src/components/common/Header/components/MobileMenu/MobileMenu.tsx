@@ -54,11 +54,16 @@ export const MobileMenu = () => {
             </>
           )}
           {!user?.isLoggedIn && (
-            <MenuItem onClick={() => router.push(AUTH_EMAIL_ROUTE)}>
+            <MenuItem
+              color="#000"
+              onClick={() => router.push(AUTH_EMAIL_ROUTE)}
+            >
               Get started
             </MenuItem>
           )}
-          <MenuItem onClick={() => router.push(HOME_ROUTE)}>Networks</MenuItem>
+          <MenuItem color="#000" onClick={() => router.push(HOME_ROUTE)}>
+            Funds
+          </MenuItem>
           {user?.isLoggedIn && <MenuItem onClick={logout}>Logout</MenuItem>}
         </MenuList>
       </Menu>

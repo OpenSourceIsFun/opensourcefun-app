@@ -41,6 +41,7 @@ export const QRCodePopup = ({ link, isOpen, onClose }: QRCodePopupProps) => {
         <ModalHeader
           fontSize="24px"
           padding="16px"
+          color="#000"
           marginTop="32px"
           textAlign="center"
         >
@@ -68,6 +69,7 @@ export const QRCodePopup = ({ link, isOpen, onClose }: QRCodePopupProps) => {
               alignItems="center"
               justifyContent="center"
               marginTop="30px"
+              color="#000"
               height="40px"
             >
               Referral
