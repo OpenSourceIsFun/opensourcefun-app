@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import useSWR from 'swr';
 import { API_USER_ROUTE } from '@/constants/routes';
 import fetchJson from '@/services/fetchJson';
-import { KycStatusTypes } from '@/components/pages/Profile/components/KYCProvider/hooks/useKYCStatusState';
 
 export type User = {
   email: string;
@@ -14,7 +13,7 @@ export type User = {
   discord: string;
   twitter: string;
   role: 'ADMIN' | 'USER';
-  kycStatus: KycStatusTypes | null;
+  kycStatus: string | null;
   isLoggedIn: boolean;
   isAdmin: boolean;
 };

@@ -1,12 +1,10 @@
-import { decodeAddress, encodeAddress } from '@polkadot/util-crypto';
-import { formatEther, formatUnits } from 'ethers/lib/utils';
+import { formatEther } from 'ethers/lib/utils';
 import { BigNumber, providers } from 'ethers';
 import { resolvePath } from '@/utils/common';
 import {
   BINANCE_WALLET,
   CLOVER_WALLET,
   METAMASK,
-  POLKADOT_WALLET,
   SUB_WALLET,
   TALISMAN_WALLET,
   UNKNOWN_INJECTED_WALLET,
@@ -32,24 +30,6 @@ interface EthereumProvider extends providers.JsonRpcProvider {
     bnbSign: (data: string) => Promise<string>;
   };
 }
-
-enum POLKA_CHAIN_DECIMALS {
-  POLKA = 10,
-  KSM = 12,
-}
-
-export enum POLKA_ADDRESS_PREFIX {
-  POLKA = 0,
-  KUSAMA = 2,
-  SUBSTRATE = 42,
-}
-
-export const convertSS58Address = (
-  address: string,
-  prefix: POLKA_ADDRESS_PREFIX,
-): string => {
-  return encodeAddress(decodeAddress(address), prefix);
-};
 
 export async function getEthereumAccount(provider?: providers.Web3Provider) {
   try {
@@ -80,30 +60,6 @@ export const shortenPolkaAddress = (
 
 export const formatEtherBalance = (balance?: BigNumber | string) =>
   balance ? parseFloat(formatEther(balance)).toFixed(2) : '';
-
-export const checkIsPolkaWalletInstalled = (wallet: WalletMeta) => {
-  if (typeof window !== 'undefined') {
-    return !!window?.injectedWeb3?.[wallet.extensionName];
-  }
-};
-
-export const checkIsPolkadotInstalled = () => {
-  return checkIsPolkaWalletInstalled(POLKADOT_WALLET);
-};
-
-export const checkIsTalismanInstalled = () =>
-  checkIsPolkaWalletInstalled(TALISMAN_WALLET);
-
-export const checkIsSubwalletInstalled = () =>
-  checkIsPolkaWalletInstalled(SUB_WALLET);
-
-export const checkIsCloverInstalled = () =>
-  checkIsPolkaWalletInstalled(CLOVER_WALLET);
-
-export const formatPolkaBalance = (balance?: BigNumber | string) =>
-  balance
-    ? parseFloat(formatUnits(balance, POLKA_CHAIN_DECIMALS.POLKA)).toFixed(2)
-    : '';
 
 export const getTalismanProvider = () => {
   return resolvePath(window, TALISMAN_WALLET.ethereumProvider);

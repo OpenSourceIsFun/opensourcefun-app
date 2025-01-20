@@ -205,14 +205,6 @@ export const useConnectExtension = () => {
   );
 
   useEffect(() => {
-    // Small hack to fix Binance Wallet unsubscription
-    if (window.BinanceChain) {
-      window.BinanceChain = {
-        ...window.BinanceChain,
-        removeListener: () => null,
-      } as any;
-    }
-
     if (localStorage.getItem(WALLET_CONNECT_KEY)) {
       connectWC();
     }

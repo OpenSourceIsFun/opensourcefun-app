@@ -19,7 +19,6 @@ import { useRouter } from 'next/router';
 import { Footer, FooterWrapper } from '@/components/footer';
 
 import { useIsMobile } from '@/hooks/useIsMobile';
-import { SupportButton } from '@/components/pages/Profile/components/KYCTab/components/SupportButton/SupportButton';
 import { IoIosArrowForward } from 'react-icons/io';
 import { sendMetricsSuccessKYC } from '@/services/metrics';
 import { AccountTab } from '@/components/pages/Profile/components/AccountTab/AccountTab';
@@ -140,7 +139,6 @@ export const ProfilePage = () => {
               ))}
             </Flex>
           )}
-          <SupportButton />
           {isMobile ? (
             <Accordion allowMultiple w="100%" sx={{ columnCount: [1] }}>
               {tabContent.map((tab, index) => (
