@@ -1,2 +1,2 @@
-export const TERMS_LINK = 'https://opensourcefun.network/terms-of-service/';
-export const PRIVACY_LINK = 'https://opensourcefun.network/privacy-policy/';
+export const TERMS_LINK = '/docs/terms-and-condition.pdf';
+export const PRIVACY_LINK = '/docs/privacy-policy.pdf';

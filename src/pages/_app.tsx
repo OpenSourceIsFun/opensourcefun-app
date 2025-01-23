@@ -14,9 +14,9 @@ import { checkIsIOS } from '@/utils/checkIsIOS';
 import '../styles/global.css';
 
 const meta = {
-  title: 'opensourcefun',
+  title: 'Open Source is Fun',
   description:
-    'opensourcefun is a community distribution platform & marketing tool that finds users with the relevant experience to your project.',
+    'Open Source is Fun is a community distribution platform & marketing tool that finds users with the relevant experience to your project.',
   viewport:
     'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0',
 };
