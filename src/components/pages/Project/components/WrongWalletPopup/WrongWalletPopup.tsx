@@ -20,6 +20,7 @@ export const WrongWalletPopup = (props: WrongWalletPopupProps) => {
       <ModalOverlay />
       <ModalContent minWidth={['100%', '100%', '600px']}>
         <ModalHeader
+          color="#000"
           fontSize="24px"
           padding="16px"
           marginTop="32px"

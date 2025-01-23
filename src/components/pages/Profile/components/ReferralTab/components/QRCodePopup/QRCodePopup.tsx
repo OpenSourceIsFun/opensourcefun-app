@@ -39,9 +39,9 @@ export const QRCodePopup = ({ link, isOpen, onClose }: QRCodePopupProps) => {
       <ModalOverlay />
       <ModalContent minWidth={['100%', '100%', '600px']}>
         <ModalHeader
+          color="#000"
           fontSize="24px"
           padding="16px"
-          color="#000"
           marginTop="32px"
           textAlign="center"
         >

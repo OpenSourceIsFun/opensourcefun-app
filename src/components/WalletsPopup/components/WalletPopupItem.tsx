@@ -28,6 +28,7 @@ export const WalletPopupItem = ({
       borderColor="border"
       _hover={{ borderColor: 'primary.basic', color: 'primary.basic' }}
       borderRadius="4px"
+      color="primary.basic"
       cursor="pointer"
       onClick={onClick}
     >

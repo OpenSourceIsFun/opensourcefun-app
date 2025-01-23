@@ -39,6 +39,7 @@ export const ChangeWalletConnectNetwork = ({
       <ModalOverlay />
       <ModalContent minWidth={['100%', '500px']}>
         <ModalHeader
+          color="#000"
           fontSize="24px"
           paddingLeft={['24px', '60px']}
           marginTop="32px"

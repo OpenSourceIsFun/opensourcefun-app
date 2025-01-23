@@ -44,7 +44,7 @@ export const GoogleDocsViewer = (props: GoogleDocsViewerProps) => {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent minHeight="80vh" minWidth="80vw">
-          <ModalHeader>{props.title}</ModalHeader>
+          <ModalHeader color="#000">{props.title}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             {loading && (

@@ -19,7 +19,7 @@ export const FundPage = () => {
   return (
     <Flex flexDirection="column">
       <Flex
-        backgroundColor="background.dark"
+        backgroundColor="#000"
         backgroundSize="cover"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
@@ -28,9 +28,9 @@ export const FundPage = () => {
       >
         <Flex
           padding={['56px 16px 280px', '76px 16px 280px', '76px 115px 119px']}
-          backgroundImage="/images/launchpad_banner.svg"
-          backgroundSize={['90%', '80%', '45%']}
-          backgroundPosition={['40% 100%', '30% 100%', '70% 100%']}
+          backgroundImage="/images/backgrounds/ai-agents.jpg"
+          backgroundSize="cover"
+          backgroundPosition="center"
           backgroundRepeat="no-repeat"
           flexDirection="column"
           maxWidth="1440px"

@@ -60,6 +60,7 @@ export const WalletsInfo = (props: WalletsInfoProps) => {
         backgroundColor="background.light"
       >
         <ModalHeader
+          color="#000"
           fontSize="24px"
           fontFamily="Poppins"
           fontWeight={700}

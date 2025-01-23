@@ -23,7 +23,7 @@ interface HeaderProps {
   isLoading: boolean;
 }
 
-const MAIN_SITE = 'https://opensourcefun.network';
+const MAIN_SITE = 'https://opensource.fun';
 
 const tabs = [
   {

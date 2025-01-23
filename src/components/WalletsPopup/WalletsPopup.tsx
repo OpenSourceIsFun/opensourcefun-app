@@ -3,14 +3,11 @@ import {
   ModalBody,
   ModalCloseButton,
   ModalContent,
-  ModalFooter,
   ModalHeader,
   ModalOverlay,
 } from '@chakra-ui/modal';
-import { Button } from '@/components/common/Button';
 import { GoogleDocsViewer } from '@/components/GoogleDocsViewer/GoogleDocsViewer';
 import styled from '@emotion/styled';
-import { isProduction } from '@/utils/general';
 import {
   PRIVACY_LINK,
   TERMS_LINK,
@@ -32,7 +29,12 @@ export const WalletsPopup = ({
   <Modal isOpen={isOpen} onClose={onClose}>
     <ModalOverlay />
     <ModalContent minWidth={['100%', '500px']}>
-      <ModalHeader fontSize="24px" paddingLeft="70px" marginTop="32px">
+      <ModalHeader
+        color="#000"
+        fontSize="24px"
+        paddingLeft="70px"
+        marginTop="32px"
+      >
         {title}
       </ModalHeader>
       <ModalCloseButton onClick={onClose} />
@@ -59,14 +61,6 @@ export const WalletsPopup = ({
           .
         </Text>
       </ModalBody>
-      {!isProduction && (
-        <ModalFooter
-          padding="20px 70px"
-          borderTop="1px solid var(--chakra-colors-border)"
-        >
-          <Button variant="primary">Learn how to connect</Button>
-        </ModalFooter>
-      )}
     </ModalContent>
   </Modal>
 );

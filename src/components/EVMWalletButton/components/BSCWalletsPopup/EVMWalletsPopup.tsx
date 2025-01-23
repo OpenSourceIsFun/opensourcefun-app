@@ -78,21 +78,25 @@ export const EVMWalletsPopup = ({ isOpen, onClose }: EVMWalletsPopupProps) => {
         onClick={onMetamaskConnect}
       />
       <WalletPopupItem
+        isComingSoon
         text={isTalismanInstalled ? 'Talisman' : 'Install Talisman'}
         icon={TALISMAN_WALLET.icon}
         onClick={onTalismanConnect}
       />
       <WalletPopupItem
+        isComingSoon
         text={isSubwalletInstalled ? 'Subwallet' : 'Install Subwallet'}
         icon={SUB_WALLET.icon}
         onClick={onSubwalletConnect}
       />
       <WalletPopupItem
+        isComingSoon
         text={isCloverInstalled ? 'Clover' : 'Install Clover'}
         icon={CLOVER_WALLET.icon}
         onClick={onCloverConnect}
       />
       <WalletPopupItem
+        isComingSoon
         text="Wallet connect"
         icon={WALLET_CONNECT.icon}
         onClick={onWalletConnect}
