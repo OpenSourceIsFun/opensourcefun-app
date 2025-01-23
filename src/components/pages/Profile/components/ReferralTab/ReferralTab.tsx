@@ -75,7 +75,7 @@ export const ReferralTab = () => {
             Invite friends now!
           </Heading>
         </Flex>
-        <Image src="/images/referral.png" />
+        <Image src="/images/referral.jpg" />
         <Flex
           marginTop="40px"
           gap="8px"
