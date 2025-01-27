@@ -2,11 +2,10 @@ import { useCallback, useEffect, useState } from 'react';
 import fetchJson from '@/services/fetchJson';
 import { API_PROJECTS_BY_ALIAS, API_PROJECTS_BY_ID } from '@/constants/routes';
 import { ProjectMetaFormData } from '@/components/pages/BackOffice/components/ProjectMeta/ProjectMeta';
-import { ImageFile } from '@/utils/getImageUrl';
 
 export interface ProjectMeta extends ProjectMetaFormData {
-  bannerFile?: ImageFile;
-  logoFile?: ImageFile;
+  bannerFile?: string;
+  logoFile?: string;
 }
 
 export const useProjectMeta = (id?: string, alias?: string) => {

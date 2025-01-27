@@ -22,10 +22,17 @@ export const ProjectsList = () => (
       gap="40px"
       marginTop="56px"
     >
-      <ProjectItem alias="ai-agents" />
-      <ProjectItem alias="ai-combinator" />
-      <ProjectItem alias="lobster-dao" />
-      <ProjectItem alias="purple-robots" />
+      <ProjectItem
+        alias="ai-agents"
+        logoFile="/images/logos/ai-agents.png"
+        bannerFile="/images/backgrounds/ai-agents.jpg"
+        network="Any"
+        title="Agents Idea (AI) Stage Fund"
+        overview="Funding for early-stage AI-agent ideas. Ideal for pre-pre-seed and pre-angel projects with a pitch deck and GitHub link"
+        managers="YC.ai, Toly.ai, Balaji.ai"
+        checkDelta="1000-2500 USDT"
+        mode="Autonomous"
+      />
     </Grid>
   </Flex>
 );

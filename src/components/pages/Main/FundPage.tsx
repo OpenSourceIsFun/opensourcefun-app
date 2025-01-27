@@ -28,7 +28,7 @@ export const FundPage = () => {
       >
         <Flex
           padding={['56px 16px 280px', '76px 16px 280px', '76px 115px 119px']}
-          backgroundImage="/images/backgrounds/ai-agents.jpg"
+          backgroundImage="/images/backgrounds/funds.jpg"
           backgroundSize="cover"
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
@@ -71,6 +71,24 @@ export const FundPage = () => {
             </BannerFlex>
           </HeaderFlex>
         </Flex>
+      </Flex>
+      <Flex
+        flexDirection="column"
+        width="100%"
+        padding={[
+          '40px 16px 0',
+          '40px 16px 0',
+          '40px 64px 0',
+          '40px 64px 0',
+          '56px 140px 0',
+        ]}
+        backgroundColor="background.light"
+      >
+        <Text fontSize="24px">
+          Discover AI-focused funds supporting startups developing AI agents and
+          autonomous systems. Secure milestone-based funding from automated
+          investors, and choose the fund that best fits your project’s vision
+        </Text>
       </Flex>
       <ProjectsList />
       <FooterWrapper>

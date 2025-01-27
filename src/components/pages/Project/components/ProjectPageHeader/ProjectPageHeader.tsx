@@ -1,6 +1,5 @@
 import { Flex, Heading, Image, Text } from '@chakra-ui/react';
 import styled from '@emotion/styled';
-import { getImageUrl } from '@/utils/getImageUrl';
 import { ProjectMeta } from '@/components/pages/BackOffice/components/ProjectMeta/ProjectMeta.hooks';
 
 interface ProjectPageHeader {
@@ -10,20 +9,18 @@ interface ProjectPageHeader {
 export const ProjectPageHeader = ({ meta, children }: ProjectPageHeader) => {
   return (
     <Flex
-      backgroundColor="background.dark"
+      backgroundColor="#000"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       alignItems="center"
       justifyContent="center"
-      height={['auto', 'auto', 'auto', '480px']}
     >
       <Flex
-        padding={['120px 24px 400px', '120px 48px 400px', '120px 115px 119px']}
-        justifyContent="center"
-        backgroundImage="/images/test_sale_banner.svg"
-        backgroundSize={['80%', '55%', '35%', '30%']}
-        backgroundPosition={['50% 100%', '50% 95%', '90% 50%', '80% 50%']}
+        padding={['56px 16px 280px', '76px 16px 280px', '76px 115px 119px']}
+        backgroundImage={meta.bannerFile}
+        backgroundSize="cover"
+        backgroundPosition="center"
         backgroundRepeat="no-repeat"
         flexDirection="column"
         maxWidth="1440px"
@@ -40,13 +37,13 @@ export const ProjectPageHeader = ({ meta, children }: ProjectPageHeader) => {
           height="96px"
           flexShrink={0}
         >
-          <Image src={getImageUrl(meta.logoFile)} width="96px" height="96px" />
+          <Image src={meta.logoFile} width="96px" height="96px" />
         </Flex>
         <Heading marginBottom="16px" color="#fff" fontSize="64px">
           {meta.title}
         </Heading>
 
-        <HeaderFlex flexDirection="column">
+        <HeaderFlex flexDirection="column" marginBottom="32px">
           <BannerText>{meta.overview}</BannerText>
         </HeaderFlex>
         {children}

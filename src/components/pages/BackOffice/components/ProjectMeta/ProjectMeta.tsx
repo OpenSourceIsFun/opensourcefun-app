@@ -18,16 +18,15 @@ import { Project } from '../../BackOfficePage';
 import { AddressCreationField } from '@/components/pages/BackOffice/components/AddressCreationField/AddressCreationField';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { ProjectMetaSchema } from '@/components/pages/BackOffice/components/ProjectMeta/ProjectMeta.schema';
-import { UploadImage } from '@/components/pages/BackOffice/components/UploadImage/UploadImage';
 import { Checkbox } from '@/components/common/Checkbox/Checkbox';
 import { FormSelect } from '@/components/common/FormSelect/FormSelect';
 
 export interface ProjectMetaFormData {
   alias: string;
   title: string;
-  token: string;
+  token?: string;
   network: string;
-  address: string;
+  address?: string;
   logoFileId?: string;
   bannerFieldId?: string;
   overview?: string;
@@ -35,8 +34,11 @@ export interface ProjectMetaFormData {
   majorContributor?: string;
   preferredExperience?: string;
   totalAllocation?: string;
+  mode?: string;
+  managers?: string;
   telegram?: string;
   discord?: string;
+  checkDelta?: string;
   twitter?: string;
   github?: string;
   siteUrl?: string;
@@ -421,16 +423,6 @@ export const ProjectMeta = ({ project, callback }: ProjectMetaProps) => {
                   </Text>
                 </Flex>
               </FormControl>
-              <UploadImage
-                name="logoFileId"
-                text="Upload Logo"
-                defaultValue={projectMeta?.logoFile}
-              />
-              <UploadImage
-                name="bannerFileId"
-                text="Upload Banner"
-                defaultValue={projectMeta?.bannerFile}
-              />
               <Button
                 variant="primary"
                 type="submit"
