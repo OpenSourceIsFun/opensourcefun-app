@@ -27,7 +27,7 @@ export const ClaimSteps = ({
         '40px 32px 90px',
         '56px 140px 106px',
       ]}
-      background="background.gray"
+      background="#000"
       gap="12px"
       flexDirection={['column', 'column', 'row']}
     >
