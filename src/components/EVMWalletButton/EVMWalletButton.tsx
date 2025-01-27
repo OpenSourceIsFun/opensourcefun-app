@@ -88,7 +88,7 @@ export const EVMWalletButton = (props: EVMWalletButtonProps) => {
           flexShrink={0}
           icon={
             <Image
-              src="/images/astar_logo.png"
+              src="/images/logos/solana_logo.png"
               alt="BSC"
               width="29px"
               height="29px"
@@ -119,7 +119,7 @@ export const EVMWalletButton = (props: EVMWalletButtonProps) => {
           icon={
             !props.control ? (
               <Image
-                src="/images/astar_logo.png"
+                src="/images/logos/solana_logo.png"
                 alt="BSC"
                 width="29px"
                 height="29px"
@@ -143,7 +143,7 @@ export const EVMWalletButton = (props: EVMWalletButtonProps) => {
           padding="0"
           icon={
             <Image
-              src="/images/astar_logo.png"
+              src="/images/logos/solana_logo.png"
               alt="BSC"
               width="29px"
               height="29px"

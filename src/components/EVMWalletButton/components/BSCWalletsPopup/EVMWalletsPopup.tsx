@@ -6,8 +6,8 @@ import { useConnectExtension } from '@/hooks/useConnectExtension';
 import {
   CLOVER_WALLET,
   METAMASK,
+  PHANTOM_WALLET,
   SUB_WALLET,
-  TALISMAN_WALLET,
   UNKNOWN_INJECTED_WALLET,
   WALLET_CONNECT,
 } from '@/constants/wallets';
@@ -44,7 +44,7 @@ export const EVMWalletsPopup = ({ isOpen, onClose }: EVMWalletsPopupProps) => {
   }, [connectInjected, onClose]);
 
   const onTalismanConnect = useCallback(() => {
-    connectExtension(TALISMAN_WALLET);
+    connectExtension(PHANTOM_WALLET);
     onClose();
   }, [connectExtension, onClose]);
 
@@ -73,14 +73,15 @@ export const EVMWalletsPopup = ({ isOpen, onClose }: EVMWalletsPopupProps) => {
         />
       )}
       <WalletPopupItem
+        isComingSoon
         text={isMetamaskInstalled ? 'Metamask' : 'Install Metamask'}
         icon={METAMASK.icon}
         onClick={onMetamaskConnect}
       />
       <WalletPopupItem
         isComingSoon
-        text={isTalismanInstalled ? 'Talisman' : 'Install Talisman'}
-        icon={TALISMAN_WALLET.icon}
+        text={isTalismanInstalled ? 'Phantom' : 'Install Phantom'}
+        icon={PHANTOM_WALLET.icon}
         onClick={onTalismanConnect}
       />
       <WalletPopupItem

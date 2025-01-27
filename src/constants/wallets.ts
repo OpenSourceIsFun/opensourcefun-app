@@ -45,6 +45,14 @@ export const CLOVER_WALLET: WalletMeta = {
   installUrl: 'https://clv.org/?type=wallet',
 };
 
+export const PHANTOM_WALLET: WalletMeta = {
+  title: 'Phantom',
+  extensionName: 'Phantom',
+  ethereumProvider: 'phantom',
+  icon: '/images/logos/phantom.svg',
+  installUrl: 'https://phantom.com/',
+};
+
 export const BINANCE_WALLET: WalletMeta = {
   title: 'Binance Wallet',
   extensionName: 'Binance Wallet',
